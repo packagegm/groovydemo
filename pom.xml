@@ -8,8 +8,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <properties>
         <!--groovy-->
-        <groovy.version>3.0.6</groovy.version>
-<!--        <groovy.version>2.4.7</groovy.version>-->
+<!--        <groovy.version>3.0.6</groovy.version>-->
+        <groovy.version>2.4.7</groovy.version>
         <junit.version>4.12</junit.version>
     </properties>
     <dependencies>

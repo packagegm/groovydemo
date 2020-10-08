@@ -37,4 +37,14 @@ public class GroovyDemoTest extends TestCase {
             Thread.sleep(sleepTime);
         }
     }
+
+    @Test
+    public void testDoInGroovyCached() throws InterruptedException, IOException {
+        int count = 0;
+        while (count++ < maxCount) {
+            System.out.println(">>>>>>>" + count);
+            GroovyDemo.doInGroovyCached();
+            Thread.sleep(sleepTime);
+        }
+    }
 }
