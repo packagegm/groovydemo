@@ -87,4 +87,4 @@ Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler i
 > 从5万次后元空间一直稳定占用13M
 ## 结论
 - 在使用Groovy脚本较多的情况下，优先使用缓存Script方式
-- 缓存Script后仍无法unload动态创建的类，如占用过多，可增加JVM参数或使用清理语句在除法FGC时回收（JDK8下需指定MaxMetaspaceSize）
+- 缓存Script后仍无法unload动态创建的类，如占用过多，可增加JVM参数或使用清理语句在触发FGC时回收（JDK8下需指定MaxMetaspaceSize）
